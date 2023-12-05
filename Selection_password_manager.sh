@@ -5,7 +5,7 @@ read select
 if   [ "$select" = "Add Password" ]; then
 	bash Hello_password_manager.sh
 elif [ "$select" = "Get Password" ]; then
-	echo "Get Password"
+	bash Get_password.sh
 elif [ "$select" = "Exit" ]; then 
 echo "Thank you!"
 else

@@ -1,7 +1,10 @@
+
+gpg -o read_able.txt  -d data.gpg
+
 echo "サービス名を入力してください："
 read service
 
-grep "$service" data.txt > temp.txt
+grep "$service" read_able.txt > temp.txt
 
 file_path="temp.txt"
 num=0
@@ -20,4 +23,5 @@ if [ "$num" = 0 ]; then
 	echo "お問い合わせのサービスは見つかりませんでした"
 fi
 
+rm read_able.txt
 rm temp.txt 
